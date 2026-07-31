@@ -4,7 +4,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/toys3.jpg"],
 		imageAlt: "Drawing",
-		description: "Pen, Acrylic Paint, Watercolor",
+		materials: "Acrylic Paint, Pen, Watercolor",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -14,7 +14,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/toys6.jpg"],
 		imageAlt: "Drawing",
-		description: "Photo collage",
+		materials: "Photo collage",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -24,7 +24,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/toys1.jpg"],
 		imageAlt: "Drawing",
-		description: "Color Pencil",
+		materials: "Color Pencil",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -34,7 +34,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/toys2.jpg"],
 		imageAlt: "Drawing",
-		description: "Acrylic Paint, Oil Paint",
+		materials: "Acrylic Paint, Oil Paint",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -44,7 +44,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/toys5.jpg"],
 		imageAlt: "Drawing",
-		description: "Color Pencil",
+		materials: "Color Pencil",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -54,7 +54,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/misc3.jpg"],
 		imageAlt: "Drawing",
-		description: "Charcoal",
+		materials: "Charcoal",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -64,7 +64,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/doodle1.jpg"],
 		imageAlt: "Drawing",
-		description: "Pen",
+		materials: "Pen",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -74,7 +74,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/doodle2.jpg"],
 		imageAlt: "Drawing",
-		description: "Pen",
+		materials: "Pen",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -84,7 +84,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/toys4.jpg"],
 		imageAlt: "Drawing",
-		description: "Pen, Acrylic Paint, Watercolor, Color Pencil",
+		materials: "Acrylic Paint, Color Pencil, Pen, Watercolor",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -94,7 +94,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/misc2.jpg"],
 		imageAlt: "Drawing",
-		description: "Acrylic Pait",
+		materials: "Acrylic Paint, Markers",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -104,7 +104,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/misc1.jpg"],
 		imageAlt: "Drawing",
-		description: "Pen, Acrylic Paint, Watercolor, Oil Paint",
+		materials: "Acrylic Paint, Oil Paint, Pen, Watercolor",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -114,7 +114,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/misc4.jpg"],
 		imageAlt: "Drawing",
-		description: "Acrylic Paint, Watercolor",
+		materials: "Acrylic Paint, Watercolor",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",

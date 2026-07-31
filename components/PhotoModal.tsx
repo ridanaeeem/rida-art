@@ -29,16 +29,16 @@ export default function PhotoModal({
 				className="fixed inset-0 bg-black bg-opacity-85"
 				onClick={() => setModalData({ ...modalData, isOpen: false })}
 			/>
-			<div className="relative bg-white p-3 md:p-5 rounded-lg text-[#171719] flex flex-center items-center justify-center flex-col flex-wrap break-words">
+			<div className="relative max-w-screen object-contain bg-white p-3 md:p-5 rounded-lg text-[#171719] flex flex-center items-center justify-center flex-col flex-wrap break-words">
 				<Link href={modalData.photo.imageSrc[modalData.photo.imageSrc.length - 1]} target="_blank">
 					<img
 						src={modalData.photo.imageSrc[modalData.photo.imageSrc.length - 1]}
 						alt={modalData.photo.imageAlt}
-						className="w-auto max-w-screen max-h-[75vh] mb-4 object-contain"
+						className="w-auto max-h-[75vh] mb-4"
 					/>
 				</Link>
 				<p className="text-2xl">
-					{/* {description + ": "} */}
+					{/* {materials + ": "} */}
 					{modalData.showLink && modalData.photo.collection !== "" ? (
 						<Link
 							href={`${path}${modalData.photo.collection}`}
@@ -55,9 +55,7 @@ export default function PhotoModal({
 					) : null}
 				</p>
 				<p className="text-md md:text-3xl flex-wrap break-words object-contain">{modalData.photo.stats}</p>
-				<p className="text-md md:text-3xl flex-wrap break-words object-contain">
-					{modalData.photo.description}
-				</p>
+				<p className="text-md md:text-3xl flex-wrap break-words object-contain">{modalData.photo.materials}</p>
 				<p>{modalData.photo.filtered}</p>
 			</div>
 			<div className="flex text-4xl justify-between m-2 text-white z-10">

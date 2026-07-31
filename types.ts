@@ -7,7 +7,7 @@ export type ModalData = {
 export type PhotoProps = {
 	imageSrc: string[];
 	imageAlt: string;
-	description: string;
+	materials: string;
 	collection: string;
 	collectionName?: string;
 	stats: string;
@@ -20,7 +20,7 @@ export type PhotoProps = {
 export const defaultPhoto: PhotoProps = {
 	imageSrc: [],
 	imageAlt: "",
-	description: "",
+	materials: "",
 	collection: "",
 	stats: "",
 	classAdjustments: "",
