@@ -1,13 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import PhotoThumbnail from "@/components/PhotoThumbnail";
-import PhotoModal from "@/components/PhotoModal";
 import { ModalData, defaultPhoto } from "../types";
 import artArray from "@/components/ArtArray";
 import ceramicsArray from "@/components/CeramicsArray";
 import Link from "next/link";
-import Image from "next/image";
+import { Darker_Grotesque } from "next/font/google";
+
+const darker_grotesque = Darker_Grotesque({ subsets: ["latin"] });
 
 export default function Page() {
 	const [modalData, setModalData] = useState<ModalData>({
@@ -91,7 +91,9 @@ export default function Page() {
 										src={ceramicsArray[4].imageSrc[0]}
 										alt="Ceramics"
 									/>
-									<p className="z-10 text-3xl text-black absolute ">View Ceramics</p>
+									<p className={`z-10 text-5xl text-black absolute ${darker_grotesque.className}`}>
+										Ceramics
+									</p>
 								</Link>
 								<Link href="/2d" key={1} className="flex justify-center items-center relative">
 									<img
@@ -99,7 +101,9 @@ export default function Page() {
 										src={artArray[9].imageSrc[0]}
 										alt="2D Art"
 									/>{" "}
-									<p className="z-10 text-3xl text-black absolute ">View 2D Art</p>
+									<p className={`z-10 text-5xl text-black absolute ${darker_grotesque.className}`}>
+										2D Art
+									</p>
 								</Link>
 							</div>
 						</div>
