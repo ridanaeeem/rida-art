@@ -3,13 +3,10 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import PhotoThumbnail from "@/components/PhotoThumbnail";
 import PhotoModal from "@/components/PhotoModal";
-import { ModalData, defaultPhoto } from "../types";
+import { ModalData, defaultPhoto } from "@/types";
 import artArray from "@/components/ArtArray";
-import ceramicsArray from "@/components/CeramicsArray";
-import Link from "next/link";
-import Image from "next/image";
 
-export default function Page() {
+export default function Page2d() {
 	const [modalData, setModalData] = useState<ModalData>({
 		photo: defaultPhoto,
 		isOpen: false,
@@ -75,6 +72,15 @@ export default function Page() {
 			<title>Film Photography</title>
 			<main>
 				<div className="bg-white">
+					<div className="inset-0 flex justify-center">
+						<PhotoModal
+							modalData={modalData}
+							setModalData={setModalData}
+							isFiltered={false}
+							pageArray={artArray}
+						/>
+					</div>
+
 					<motion.div
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
@@ -82,26 +88,12 @@ export default function Page() {
 						transition={{
 							duration: transitionLength,
 						}}>
-						<div className="p-2 mx-[5vw] lg:mx-20 md:p-5">
-							<div className="text-l md:text-3xl flex font-normal max-md:text-center max-md:justify-center text-black"></div>
-							<div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 ">
-								<Link href="/3d" key={0} className="flex justify-center items-center relative ">
-									<img
-										className="z-10 flex items-center justify-center transition-all duration-300 hover:brightness-50 "
-										src={ceramicsArray[4].imageSrc[0]}
-										alt="Ceramics"
-									/>
-									<p className="z-10 text-3xl text-black absolute ">View Ceramics</p>
-								</Link>
-								<Link href="/2d" key={1} className="flex justify-center items-center relative">
-									<img
-										className="z-10 flex items-center justify-center transition-all duration-300 hover:brightness-50 "
-										src={artArray[9].imageSrc[0]}
-										alt="2D Art"
-									/>{" "}
-									<p className="z-10 text-3xl text-black absolute ">View 2D Art</p>
-								</Link>
-							</div>
+						<div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 p-2 mx-[5vw] lg:mx-20 md:p-5">
+							{artArray.map((photo) => (
+								<div key={photo.index} className="relative">
+									<PhotoThumbnail photo={photo} setModalData={setModalData} />
+								</div>
+							))}
 						</div>
 					</motion.div>
 				</div>

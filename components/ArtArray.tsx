@@ -24,7 +24,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/toys1.jpg"],
 		imageAlt: "Drawing",
-		materials: "Color Pencil",
+		materials: "Colored Penvils",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -44,7 +44,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/toys5.jpg"],
 		imageAlt: "Drawing",
-		materials: "Color Pencil",
+		materials: "Colored Penvils",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
@@ -84,7 +84,7 @@ const artArray: PhotoProps[] = [
 	{
 		imageSrc: ["/toys4.jpg"],
 		imageAlt: "Drawing",
-		materials: "Acrylic Paint, Color Pencil, Pen, Watercolor",
+		materials: "Acrylic Paint, Colored Penvils, Pen, Watercolor",
 		collection: "",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
